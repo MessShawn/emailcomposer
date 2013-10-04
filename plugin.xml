@@ -1,0 +1,50 @@
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.phonegap.plugins"
+    version="0.2.0">
+
+    <name>EmailComposer</name>
+
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+
+    <description>This plugin allows you to save the contents of an HTML canvas tag to the iOS Photo Library from your app.</description>
+    <author>Tommy-Carlos Williams - tommy@devgeeks.org</author>
+    <keywords>canvas,image,photo library</keywords>
+
+    <license>MIT</license>
+
+    <js-module src="www/emailcomposer.js" name="EmailComposer">
+        <clobbers target="window.plugins.emailComposer" />
+    </js-module>
+
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="EmailComposer">
+                <param name="ios-package" value="Canvas2ImagePlugin"/>
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/Canvas2ImagePlugin.h" />
+
+        <source-file src="src/ios/Canvas2ImagePlugin.m"
+            compiler-flags="-fno-objc-arc" />
+    </platform>
+
+    <!-- android -->
+    <platform name="android">
+
+        <config-file target="res/xml/config.xml" parent="/*">
+          <feature name="EmailComposer" >
+            <param name="android-package" value="com.phonegap.plugins.EmailComposer"/>
+          </feature>
+        </config-file>
+
+        <source-file src="src/android/EmailComposer.java" 
+            target-dir="src/com/phonegap/plugins" />
+
+    </platform>
+</plugin>
