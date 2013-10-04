@@ -1,7 +1,7 @@
-Canvas2ImagePlugin
+EmailComposer
 ============
 
-This plugin allows you to save the contents of an HTML canvas tag to the iOS Photo Library, or Android Gallery from your app.
+email plugin for phonegap(android/ios) .
 
 Installation
 ------------
