@@ -1,4 +1,4 @@
-package com.phonegap.plugins;
+package com.phonegap.plugins.emailcomposer;
 
 import java.io.File;
 import java.util.ArrayList;

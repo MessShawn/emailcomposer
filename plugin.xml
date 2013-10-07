@@ -1,6 +1,6 @@
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    id="com.phonegap.plugins"
+    id="com.phonegap.plugins.emailcomposer"
     version="0.2.0">
 
     <name>EmailComposer</name>
@@ -39,7 +39,7 @@
 
         <config-file target="res/xml/config.xml" parent="/*">
           <feature name="EmailComposer" >
-            <param name="android-package" value="com.phonegap.plugins.EmailComposer"/>
+            <param name="android-package" value="com.phonegap.plugins.emailcomposer.EmailComposer"/>
           </feature>
         </config-file>
 
