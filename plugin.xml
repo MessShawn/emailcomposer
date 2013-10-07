@@ -44,7 +44,7 @@
         </config-file>
 
         <source-file src="src/android/EmailComposer.java" 
-            target-dir="src/com/phonegap/plugins" />
+            target-dir="src/com/phonegap/plugins/emailcomposer" />
 
     </platform>
 </plugin>
