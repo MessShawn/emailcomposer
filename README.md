@@ -9,7 +9,7 @@ Installation
 ### For Cordova 3.0.x:
 
 1. To add this plugin just type: `cordova plugin add https://github.com/MessShawn/emailcomposer.git` or `phonegap local plugin add https://github.com/MessShawn/emailcomposer.git`
-2. To remove this plugin type: `cordova plugin remove com.phonegap.plugins.EmailComposer` or `phonegap local plugin remove com.phonegap.plugins.EmailComposer`
+2. To remove this plugin type: `cordova plugin remove com.phonegap.plugins.emailcomposer.EmailComposer` or `phonegap local plugin remove com.phonegap.plugins.emailcomposer.EmailComposer`
 
 ### NOTE: For older versions of Cordova (You will probably have to use tag 0.2.0)
 
